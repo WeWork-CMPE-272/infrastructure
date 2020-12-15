@@ -25,14 +25,6 @@ provider "aws" {
   allowed_account_ids = [""]
 }
 
-# provider "aws" {
-#   region              = "us-east-1"
-#   alias               = "us_east_1"
-#   access_key = "AKIA4GF2HVKX5G2R5AE4"
-#   secret_key = "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"
-#   allowed_account_ids = ["837909195439"]
-# }
-
 // BEGIN Global Modules
 module "account" {
   source = "./modules/account"
